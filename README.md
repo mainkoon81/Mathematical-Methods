@@ -1,2 +1,29 @@
-# kimmk0810-gmail.com
-oo-Mathematical-Methods
+# Mathematical-Methods
+
+> How do you **design**
+ - a boat that doesn't tip over as it bobs in the water,
+ - the suspension system of a car for a smooth ride,
+ - circuits that tune to the correct frequencies in a cell phone?
+
+> How do you **model**
+ - the growth of antibiotic resistant bacteria,
+ - gene expression,
+ - online purchasing trends?
+
+The answer: differential equations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
