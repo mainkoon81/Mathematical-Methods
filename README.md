@@ -10,7 +10,8 @@
  - gene expression,
  - online purchasing trends?
 
-The answer: differential equations.
+[The answer]: differential equations. Differential equations are the language of the models we use to describe the world around us.
+
 
 
 
