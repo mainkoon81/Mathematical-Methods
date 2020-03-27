@@ -10,7 +10,7 @@
  - gene expression,
  - online purchasing trends?
 
-[The answer]: differential equations. Differential equations are the language of the models we use to describe the world around us. We will develop the mathematical tools needed to solve linear differential equations. In the case of nonlinear differential equations, we will employ graphical methods and approximation to understand solutions.
+__[The answer]:__ Differential Equations. They are the language of the models we use to describe the world around us. We will develop the mathematical tools needed to solve linear differential equations. In the case of nonlinear differential equations, we will employ graphical methods and approximation to understand solutions.
 
 
 
