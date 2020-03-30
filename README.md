@@ -24,7 +24,7 @@ Time series is a dataset **collected through time**. Now, since we are doing sam
  - globtempl (Land only mean temperature deviations for the years 1880-2015)
  - star (Variable Star: The magnitude of a star taken at midnight for 600 consecutive days )  
 > Stationarity
- - In a stationary time series, there is no systematic change in **mean** (no trend), no systematic change in **variance**, and no **fluctuation**(periodic variations).
+ - In a stationary time series, there is no systematic change in **mean** (no trend), no systematic change in **variance**, and no **fluctuation**(periodic variations).. so..basically, the properties of one section of a data are much like the properties of the other sections of the data.
  
  
  
