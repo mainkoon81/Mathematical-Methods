@@ -17,7 +17,16 @@ __[The answer]:__ Differential Equations. They are the language of the models we
 -------------------------------------------------------------------------------------------------------------------
 ## 2. Time Series
 Time series is a dataset **collected through time**. Sampling adjacent points in time introduce a correlation. 
-
+> Some time series from 'astsa' package in R
+ - jj (Johnson and Johnson Quarterly Earnings for 84 quarters)
+ - flu (Pneumonia and influenza deaths in the U.S. per 10,000 people Monthly for 11 years)
+ - globtemp (Land-ocean mean temperature deviations for the years 1880-2015)
+ - globtempl (Land only mean temperature deviations for the years 1880-2015)
+ - star (Variable Star: The magnitude of a star taken at midnight for 600 consecutive days )  
+> Stationarity
+ - In a stationary time series, there is no systematic change in mean (no trend), no systematic change in variance, and no periodic variations. 
+> ACF (Auto Correlation Function)
+ - If we characterize time series as a realization of a **stochastic process**,  
 
 
 
