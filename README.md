@@ -25,8 +25,36 @@ Time series is a dataset **collected through time**. Sampling adjacent points in
  - star (Variable Star: The magnitude of a star taken at midnight for 600 consecutive days )  
 > Stationarity
  - In a stationary time series, there is no systematic change in mean (no trend), no systematic change in variance, and no periodic variations. 
-> ACF (Auto Correlation Function)
+> ACF (Auto Cov Function)
  - If we characterize time series as a realization of a **stochastic process**,  
+
+
+> ACF (Auto Corr Function)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
