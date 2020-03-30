@@ -28,7 +28,7 @@ Time series is a dataset **collected through time**. Now, since we are doing sam
  - In a stationary time series, there is no systematic change in **mean** (no trend), no systematic change in **variance**, and no **fluctuation**(periodic variations).. so..basically, the properties of one section of a data are much like the properties of the other sections of the data. Usually stationarity's a property of a stochastic process of a model, not a time series. But we say `stationary time series` if you think that it can be modeled with **`stochastic process`**!  
  - If we have a non-stationary time series, which we usually have, we basically do some `transformations` to get the stationary time series. Once we have a stationary time series, we model it and then go back and model our non-stationary time series. So we use the transformations as a middle step.
  
-> Auto-Cov-Function and Coefficient
+> ACV (Auto-Cov-Function and Coefficient)
  - If we characterize time series as a realization of a **stochastic process**,  
  
  
