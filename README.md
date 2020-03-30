@@ -23,7 +23,7 @@ Time series is a dataset **collected through time**. Now, since we are doing sam
    - globtemp (Land-ocean mean temperature deviations for the years 1880-2015)
    - globtempl (Land only mean temperature deviations for the years 1880-2015)
    - star (Variable Star: The magnitude of a star taken at midnight for 600 consecutive days )  
-   
+### A. How to Describe Time Series   
 > Stationarity
  - In a stationary time series, there is no systematic change in **mean** (no trend), no systematic change in **variance**, and no **fluctuation**(periodic variations).. so..basically, the properties of one section of a data are much like the properties of the other sections of the data. Usually stationarity's a property of a stochastic process of a model, not a time series. But we say `stationary time series` if you think that it can be modeled with **`stochastic process`**!  
  - If we have a non-stationary time series, which we usually have, we basically do some `transformations` to get the stationary time series. Once we have a stationary time series, we model it and then go back and model our non-stationary time series. So we use the transformations as a middle step.
@@ -43,6 +43,7 @@ Time series is a dataset **collected through time**. Now, since we are doing sam
 
 
 
+### B. How to Model Time Series   
 
 
 
