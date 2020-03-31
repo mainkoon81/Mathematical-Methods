@@ -45,10 +45,17 @@ __c> ACF (Auto-Corr-Function & Coefficient)__
    - :  `acf(TS_data)` returns a bunch of Auto-Corr-Coefficient values ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k). 
    - From the chart above, we do not have much correlation between all the different lags(all values are within the significance level). Just because we generated this data as a purely random process(same "rnorm" for every RV), we cannot expect to see the correlation within different lags. 
 
-
-
 ### B. How to Model Time Series   
+__a> method 01. Random Walk__
+ - 
+ - 
 
+__b> method 02. Moving Average__
+ - 
+ - 
+ 
+ 
+ 
 
 
 
