@@ -43,6 +43,7 @@ __c> ACF (Auto-Corr-Function & Coefficient)__
  - Assuming weak stationarity (to define our TS as a Random Process), the **`auto-correlation coefficient`** between two random variables - ![formula](https://render.githubusercontent.com/render/math?math=\X_t) and ![formula](https://render.githubusercontent.com/render/math?math=\X_tplus_k) - is: <img src="https://user-images.githubusercontent.com/31917400/78048697-05dc2180-7372-11ea-816a-5c71815aa778.jpg" />   
  
    - :  `acf(TS_data)` returns a bunch of Auto-Corr-Coefficient values ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k). 
+   - From the chart above, we do not have much correlation between all the different lags(all values are within the significance level). Just because we generated this data as a purely random process(same "rnorm" for every RV), we cannot expect to see the correlation within different lags. 
 
 
 
