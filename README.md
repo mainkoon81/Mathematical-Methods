@@ -24,11 +24,11 @@ Time series is a dataset **collected through time**. Now, since we are doing sam
    - globtempl (Land only mean temperature deviations for the years 1880-2015)
    - star (Variable Star: The magnitude of a star taken at midnight for 600 consecutive days )  
 ### A. How to Describe Time Series   
-> Stationarity
+__a> Stationarity__
  - In a stationary time series, there is no systematic change in **mean** (no trend), no systematic change in **variance**, and no **fluctuation**(periodic variations).. so..basically, the properties of one section of a data are much like the properties of the other sections of the data. Usually "stationarity" is a property of a stochastic process of a model, not a time series. But we say `stationary time series` if you think that it can be modeled with **`stochastic process`**...  
  - If we have a non-stationary time series, which we usually have, we basically do some `transformations` to get the stationary time series. Once we have a stationary time series, we model it and then go back and model our non-stationary time series. So we use the transformations as a middle step.
  
-> Acv (Auto-Cov-Function and Coefficient)
+__b> Acv (Auto-Cov-Function & Coefficient)__
  - `COV` measures the strength of linear association(so dependence) b/w two random variables...assuming both shares same unit.
  - `Stochastic process` put a lot of random variables ![formula](https://render.githubusercontent.com/render/math?math=\X_t)(each of which follows different distribution) together and give them a sequence. In deterministic processes (for example, solution of ordinary differential equation), You start with some point and the solution will tell you exact trajectory. The stochastic process is basically opposite of that. At every step `t`, you have some randomness (a single random sampling from ![formula](https://render.githubusercontent.com/render/math?math=\X_t)), i.e. there is a certain distribution that ![formula](https://render.githubusercontent.com/render/math?math=\X_t) follows at that time stamp `t`.
  - `Time Series` can be actually a series of realizations from the stochastic process going on the back one. If we characterize time series as a realization of a **stochastic process**, let's say the realization of ![formula](https://render.githubusercontent.com/render/math?math=\X_1) is my first datapoint in the time series, and the realization of ![formula](https://render.githubusercontent.com/render/math?math=\X_2) is my second datapoint in my time series. Thus, the stochastic process might come with ensemble of realizations(curves, TS, or sampling trajectories), but now I only have one time series(curve). 
@@ -36,16 +36,12 @@ Time series is a dataset **collected through time**. Now, since we are doing sam
    - cov(![formula](https://render.githubusercontent.com/render/math?math=\X_1) to ![formula](https://render.githubusercontent.com/render/math?math=\X_1plus_k)) = cov(![formula](https://render.githubusercontent.com/render/math?math=\X_10) to ![formula](https://render.githubusercontent.com/render/math?math=\X_10plus_k)) = ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k)
    - The thing is, we usually do not have the stochastic process, but we only have a time series, just a single realization of the stochastic process. So we have to use the TS to approximate cov ~> ![formula](https://render.githubusercontent.com/render/math?math=\C_k)
  - `Auto-Cov-Coeff` 
-   - Autocovariance coefficients at different lags `k` is ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k) = 𝐶𝑜𝑣(![formula](https://render.githubusercontent.com/render/math?math=\X_t), ![formula](https://render.githubusercontent.com/render/math?math=\X_tplus_k)) ~> ![formula](https://render.githubusercontent.com/render/math?math=\C_k) <img src="https://user-images.githubusercontent.com/31917400/78036963-cfe37100-7362-11ea-8979-0f6f49336de0.jpg" />
+   - Autocovariance coefficients at different lags `k` is ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k) = 𝐶𝑜𝑣(![formula](https://render.githubusercontent.com/render/math?math=\X_t), ![formula](https://render.githubusercontent.com/render/math?math=\X_tplus_k)) ~> ![formula](https://render.githubusercontent.com/render/math?math=\C_k) <img src="https://user-images.githubusercontent.com/31917400/78039842-86952080-7366-11ea-8a76-04e80111f3d8.jpg" />
    
- 
- 
- 
- 
- 
- 
+   - `acf(TS_data, type='covariance')` 
 
-> ACF (Auto-Corr-Function)
+__c> ACF (Auto-Corr-Function & Coefficient)__
+ - Assuming weak stationarity in the Random Process, the auto-correlation coefficient between ![formula](https://render.githubusercontent.com/render/math?math=\X_t) and ![formula](https://render.githubusercontent.com/render/math?math=\X_tplus_k) is: <img src="mmm" />   
 
 
 
