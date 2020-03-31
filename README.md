@@ -37,12 +37,12 @@ __b> Acv (Auto-Cov-Function & Coefficient)__
    - The thing is, we usually do not have the stochastic process, but we only have a time series, just a single realization of the stochastic process. So we have to use the TS to approximate cov ~> ![formula](https://render.githubusercontent.com/render/math?math=\C_k)
  - `Auto-Cov-Coeff` at different lags `k` is ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k) = 𝐶𝑜𝑣(![formula](https://render.githubusercontent.com/render/math?math=\X_t), ![formula](https://render.githubusercontent.com/render/math?math=\X_tplus_k)) ~> ![formula](https://render.githubusercontent.com/render/math?math=\C_k) <img src="https://user-images.githubusercontent.com/31917400/78047111-e3e19f80-736f-11ea-9378-2231df175586.jpg" />
    
-   - : `acf(TS_data, type='covariance')` returns a bunch of Auto-Cov-Coefficient values. 
+   - : `acf(TS_data, type='covariance')` returns a bunch of Auto-Cov-Coefficient values ![formula](https://render.githubusercontent.com/render/math?math=\C_k). 
 
 __c> ACF (Auto-Corr-Function & Coefficient)__
  - Assuming weak stationarity (to define our TS as a Random Process), the **`auto-correlation coefficient`** between two random variables - ![formula](https://render.githubusercontent.com/render/math?math=\X_t) and ![formula](https://render.githubusercontent.com/render/math?math=\X_tplus_k) - is: <img src="https://user-images.githubusercontent.com/31917400/78048697-05dc2180-7372-11ea-816a-5c71815aa778.jpg" />   
  
-   - :  `acf(TS_data)` returns a bunch of Auto-Corr-Coefficient values. 
+   - :  `acf(TS_data)` returns a bunch of Auto-Corr-Coefficient values ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k). 
 
 
 
