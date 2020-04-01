@@ -93,7 +93,7 @@ __b> method 02. Moving Average Process__
    plot(MA_process, main="MV(2)", ylab="standard density", col="blue")
    acf(MA_process, main="Correlogram of MV(2)")
    ```
- 
+   <img src="https://user-images.githubusercontent.com/31917400/78194449-1628f500-7475-11ea-81de-067b2bd11092.jpg" />
  
 
 
