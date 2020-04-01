@@ -66,11 +66,11 @@ __a> method 01. Random Walk__
    plot(diff(random_walk_test))
    plot(acf(diff(random_walk_test)))
    ```
-   <img src="https://user-images.githubusercontent.com/31917400/78179607-62663c00-7459-11ea-9f46-c326b44ca244.jpg" />
+   <img src="https://user-images.githubusercontent.com/31917400/78182015-46fd3000-745d-11ea-8ae7-146b02f3c641.jpg" />
 
 __b> method 02. Moving Average Process__
- - 
- - 
+ - First, identify MA. What makes the **![formula](https://render.githubusercontent.com/render/math?math=\X_t)**? We can express **![formula](https://render.githubusercontent.com/render/math?math=\X_t)** as a linear combination of the **noises** that affects it.  
+   <img src="https://user-images.githubusercontent.com/31917400/78184893-24b9e100-7462-11ea-8f90-f79eb504aaab.jpg" />
  
  
  
