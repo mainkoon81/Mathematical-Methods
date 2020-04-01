@@ -70,7 +70,9 @@ __a> method 01. Random Walk__
 
 __b> method 02. Moving Average Process__
  - First, identify MA. What makes the **![formula](https://render.githubusercontent.com/render/math?math=\X_t)**? We can express **![formula](https://render.githubusercontent.com/render/math?math=\X_t)** as a linear combination of the **noises** that affects it.  
-   <img src="https://user-images.githubusercontent.com/31917400/78185368-d8bb6c00-7462-11ea-9f90-1ec3e0e3d955.jpg" />
+   <img src="https://user-images.githubusercontent.com/31917400/78192690-86814780-7470-11ea-93f4-14b9509b81c8.jpg" /> 
+ 
+ - 
  
  
  
