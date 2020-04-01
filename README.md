@@ -72,7 +72,26 @@ __b> method 02. Moving Average Process__
  - First, identify MA. What makes the **![formula](https://render.githubusercontent.com/render/math?math=\X_t)**? We can express **![formula](https://render.githubusercontent.com/render/math?math=\X_t)** as a linear combination of the **noises** that affects it.  
    <img src="https://user-images.githubusercontent.com/31917400/78192845-e8da4800-7470-11ea-8c6e-641972835c56.jpg" /> 
  
-
+   ```
+   #Generate Noise
+   noise = rnorm(10000)
+   
+   #Introduce variable
+   MA_2 = NULL
+   
+   # Loop for generating MA(2) Process
+   for(i in 3:10000) {
+      MA_2[i] = noise[i] + 0.7*noise[i-1] + 0.2*noise[i-2]
+   }
+   
+   # shift data to left by 2 units?
+   MA_process <- MA_2[3:10000]
+   MA_process = ts(MA_process)
+   
+   par(mfrow = c(2,1))
+   plot(MA_process, main="MV(2)", ylab="standard density", col="blue")
+   acf(MA_process, main="Correlogram of MV(2)")
+   ```
  
  
 
