@@ -72,7 +72,7 @@ __b> method 02. Moving Average Process__
  - First, identify MA. What makes the **![formula](https://render.githubusercontent.com/render/math?math=\X_t)**? We can express **![formula](https://render.githubusercontent.com/render/math?math=\X_t)** as a linear combination of the **noises** that affects it.  
    <img src="https://user-images.githubusercontent.com/31917400/78192845-e8da4800-7470-11ea-8c6e-641972835c56.jpg" />
    
-   MA(2)..? then.. starting from index `3`. 
+   MA(2)..? then.. starting from index `3`. If you take ACF of MA(2) process, the high correlation will cut off at `Lag_2`. 
    ```
    #Generate Noise
    noise = rnorm(10000)
