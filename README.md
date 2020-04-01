@@ -66,7 +66,7 @@ __a> method 01. Random Walk__
    plot(diff(random_walk_test))
    plot(acf(diff(random_walk_test)))
    ```
-   <img src="https://user-images.githubusercontent.com/31917400/78179417-13200b80-7459-11ea-8026-bb04a411891a.jpg" />
+   <img src="https://user-images.githubusercontent.com/31917400/78179607-62663c00-7459-11ea-9f46-c326b44ca244.jpg" />
 
 __b> method 02. Moving Average__
  - 
