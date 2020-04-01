@@ -47,7 +47,25 @@ __c> ACF (Auto-Corr-Function & Coefficient)__
 
 ### B. How to Model Time Series   
 __a> method 01. Random Walk__
- - If assuming ![formula](https://render.githubusercontent.com/render/math?math=\X_t=) X_(t-1) + ![formula](https://render.githubusercontent.com/render/math?math=\epsilon_t) where ![formula](https://render.githubusercontent.com/render/math?math=\epsilon_t~\N(\mu,\sigma^2)), and if ![formula](https://render.githubusercontent.com/render/math?math=\X_0=0), then ![formula](https://render.githubusercontent.com/render/math?math=\X_1=\epsilon_1), thus: <img src="https://user-images.githubusercontent.com/31917400/78176394-51ff9280-7454-11ea-862a-6978765dfc0c.jpg" />
+ - If assuming ![formula](https://render.githubusercontent.com/render/math?math=\X_t=) X_(t-1) + ![formula](https://render.githubusercontent.com/render/math?math=\epsilon_t) where ![formula](https://render.githubusercontent.com/render/math?math=\epsilon_t~\N(\mu,\sigma^2)), and if **![formula](https://render.githubusercontent.com/render/math?math=\X_0=0)**, then ![formula](https://render.githubusercontent.com/render/math?math=\X_1=\epsilon_1), thus: <img src="https://user-images.githubusercontent.com/31917400/78176394-51ff9280-7454-11ea-862a-6978765dfc0c.jpg" />
+   ```
+   X=NULL
+   X[1] = 0
+   
+   for(i in 2:1000) {
+      X[i] = X[i-1] + rnorm(1)
+   }
+   
+   print(X)
+   random_walk_test <- ts(X)
+   plot(random_walk_test, main="Random Walk Example", xlab="Days", ylab=" ", lwd=2)
+   ```
+ - But, random walk above is not a stationary time series. It would not make sense to actually find acf of it because we define acf for stationary time series. If we plot `acf()`, it would show there is a high correlation in this data and there is no stationarity.
+ - Can we remove this stupid trend in our random walk? How to turn back to the ransom process? `diff()` gives us the bunch of differences b/w each sample. if **![formula](https://render.githubusercontent.com/render/math?math=\X_0=0)**, then they are random noises that follow N(![formula](https://render.githubusercontent.com/render/math?math=\mu,\sigma^2)) that we set. 
+   ```
+   plot(diff(random_walk_test))
+   plot(acf(diff(random_walk_test)))
+   ```
  
 
 __b> method 02. Moving Average__
