@@ -61,7 +61,7 @@ __a> method 01. Random Walk__
    plot(random_walk_test, main="Random Walk Example", xlab="Days", ylab=" ", lwd=2)
    ```
  - But, random walk above is not a stationary time series. It would not make sense to actually find acf of it because we define acf for stationary time series. If we plot `acf()`, it would show there is a high correlation in this data and there is no stationarity.
- - Can we remove this stupid trend in our random walk? How to turn back to the ransom process? `diff()` gives us the bunch of differences b/w each sample. if **![formula](https://render.githubusercontent.com/render/math?math=\X_0=0)**, then they are random noises that follow N(![formula](https://render.githubusercontent.com/render/math?math=\mu,\sigma^2)) that we set. 
+ - Can we remove this stupid trend in our random walk? How to turn back to the ransom process? `diff()` gives us the bunch of differences b/w each consecutive samples. if **![formula](https://render.githubusercontent.com/render/math?math=\X_0=0)**, then they are random noises that follow N(![formula](https://render.githubusercontent.com/render/math?math=\mu,\sigma^2)) that we set. 
    ```
    plot(diff(random_walk_test))
    plot(acf(diff(random_walk_test)))
