@@ -68,7 +68,7 @@ __a> method 01. Random Walk__
    ```
    <img src="https://user-images.githubusercontent.com/31917400/78179607-62663c00-7459-11ea-9f46-c326b44ca244.jpg" />
 
-__b> method 02. Moving Average__
+__b> method 02. Moving Average Process__
  - 
  - 
  
