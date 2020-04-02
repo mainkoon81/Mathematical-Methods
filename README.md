@@ -107,7 +107,7 @@ __b> method 02. Moving Average Process__
    <img src="https://user-images.githubusercontent.com/31917400/78264089-a8271100-74fa-11ea-965c-437cb270d31e.jpg" />
  
 __c> method 03. Auto Regressive Process__
-
+ - Series: 
 
 
 
