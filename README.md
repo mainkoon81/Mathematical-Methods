@@ -83,6 +83,7 @@ __b> method 02. Moving Average Process__
    - `q` tells us how far back to look along the noise sequence. 
    - MA(2)..? then.. starting from index `3`, taking average of the three components. 
    - If you take ACF of MA(2) process, the high correlation will cut off at `Lag_2`. 
+   - Of course, the more neighbors the smoother..
    ```
    #Generate Noise
    noise = rnorm(10000)
