@@ -81,7 +81,7 @@ __b> method 02. Moving Average Process__
    <img src="https://user-images.githubusercontent.com/31917400/78192845-e8da4800-7470-11ea-8c6e-641972835c56.jpg" />
    
    - `q` tells us how far back to look along the noise sequence. 
-   - MA(2)..? then.. starting from index `3`, taking average of the four components. 
+   - MA(2)..? then.. starting from index `3`, taking average of the three components. 
    - If you take ACF of MA(2) process, the high correlation will cut off at `Lag_2`. 
    ```
    #Generate Noise
