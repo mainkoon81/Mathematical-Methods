@@ -126,6 +126,3 @@ __b> method 02. Moving Average Process__
 
 
 
-
-
-
