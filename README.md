@@ -29,7 +29,7 @@ __a> Stationarity__
 
  - In a stationary time series, there is no systematic change in **mean** (no trend), no systematic change in **variance**, and no **fluctuation**(periodic variations). Of course each random variable (![formula](https://render.githubusercontent.com/render/math?math=\X_1,\X_2,..)) has its own unique distribution, but the **`joint of such random variables`** theoretically does not change over time(or "index"). So..basically, picking up one of the curves, **`the properties of one section of a data are much like the properties of the other sections of the data`**, and **`the association b/w such consecutive data points should be very low`** (coz each point follows its own distribution independent each other). Therefore, the **`joint distribution of two random variables depends only on the lag spacing`** and not which curve you have on the random process. No matter where you look, to the left or the right on the distribution, the **`autocovariance only depends upon separation`**.  
  
-   ![formula](https://render.githubusercontent.com/render/math?math=\mu(\t_n)=C)
+   ![formula](https://render.githubusercontent.com/render/math?math=\mu(\t_n)=Constant)
    
    ![formula](https://render.githubusercontent.com/render/math?math=\gamma(\t_1,\t_2)=\gamma(\t_2-\t_1)=\gamma(k))
    
