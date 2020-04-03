@@ -145,11 +145,22 @@ __c> method 03. Auto Regressive Process__
    ```
    <img src="https://user-images.githubusercontent.com/31917400/78380930-8a29e100-75cc-11ea-976a-6775173858fb.jpg" />
      
+__d> method 04. Mixed Model__ (ARMA)
 
 
 
 
+__e> method 05. Integrated Model__ (ARIMA)
 
+
+__f> method 06. Integrated Model with Seasonality__ (SARIMA)
+
+> ### How to evaluate Time Series Model
+
+
+
+
+### C. How to Forecast TS value Using Exponential Smoothing Technique
 
 
 
