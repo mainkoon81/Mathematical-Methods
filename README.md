@@ -53,6 +53,11 @@ __c> ACF (Auto-Corr-Function & Coefficient)__
    - :  `acf(TS_data)` returns a bunch of Auto-Corr-Coefficient values ![formula](https://render.githubusercontent.com/render/math?math=\gamma_k). 
    - From the chart above, we do not have much correlation between all the different lags(all values are within the significance level). Just because we generated this data as a purely random process(same "rnorm" for every RV, which means we already implies the stationary distribution), we don't have to expect to see the correlation b/w different lags. TS values in each lag are all independent? 
 
+__d> PACF (Patial Auto-Corr-Function & Coefficient)__
+ - The ACF is one of the primary tools for characterizing AR(p) or MA(q)...Can you tell what the order of the process should be?
+   - MA(`q`) has an **ACF** that cuts off after `q` lags...(so if you find ACF cuts off after 4 lags, you can be reasonably sure you have an MA(4) process). 
+   - AR(`p`) has an **PACF** that cuts off after `p` lags...(so if you find PACF cuts off after 4 lags, you can be reasonably sure you have an AR(4) process).    
+
 ### B. How to Model Time Series   
 __a> method 01. Random Walk__
  - It's not always stationary.
