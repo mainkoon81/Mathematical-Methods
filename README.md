@@ -103,7 +103,7 @@ __b> method 02. Moving Average Process__
    MA_process = ts(MA_process)
    
    par(mfrow = c(2,1))
-   plot(MA_process, main="MV(2)", ylab="standard density", col="blue")
+   plot(MA_process, main="MV(2)", ylab="standard density support", col="blue")
    acf(MA_process, main="Correlogram of MV(2)")
    ```
    <img src="https://user-images.githubusercontent.com/31917400/78264089-a8271100-74fa-11ea-965c-437cb270d31e.jpg" />
@@ -134,7 +134,7 @@ __c> method 03. Auto Regressive Process__
    AR_process = ts(X)
    
    par(mfrow = c(2,1))
-   plot(AR_process, main="AR(1)", ylab="standard density", col="blue")
+   plot(AR_process, main="AR(1)", ylab="standard density support", col="blue")
    acf(AR_process, main="Correlogram of AR(1)")
      
    ```
