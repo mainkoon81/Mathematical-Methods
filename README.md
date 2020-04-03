@@ -55,6 +55,7 @@ __c> ACF (Auto-Corr-Function & Coefficient)__
 
 ### B. How to Model Time Series   
 __a> method 01. Random Walk__
+ - It's not always stationary.
  - If assuming ![formula](https://render.githubusercontent.com/render/math?math=\X_t=) X_(t-1) + ![formula](https://render.githubusercontent.com/render/math?math=\epsilon_t) where ![formula](https://render.githubusercontent.com/render/math?math=\epsilon_t~\N(\mu,\sigma^2)), and if **![formula](https://render.githubusercontent.com/render/math?math=\X_0=0)**, then ![formula](https://render.githubusercontent.com/render/math?math=\X_1=\epsilon_1), thus: <img src="https://user-images.githubusercontent.com/31917400/78176394-51ff9280-7454-11ea-862a-6978765dfc0c.jpg" />
    ```
    X=NULL
@@ -77,6 +78,7 @@ __a> method 01. Random Walk__
    <img src="https://user-images.githubusercontent.com/31917400/78182015-46fd3000-745d-11ea-8ae7-146b02f3c641.jpg" />
 
 __b> method 02. Moving Average Process__
+ - It's always stationary. 
  - First, identify MA. What makes the **![formula](https://render.githubusercontent.com/render/math?math=\X_t)**? We can express **![formula](https://render.githubusercontent.com/render/math?math=\X_t)** as a linear combination of the **noises** that affects it.  
    <img src="https://user-images.githubusercontent.com/31917400/78192845-e8da4800-7470-11ea-8c6e-641972835c56.jpg" />
    
@@ -107,19 +109,36 @@ __b> method 02. Moving Average Process__
    <img src="https://user-images.githubusercontent.com/31917400/78264089-a8271100-74fa-11ea-965c-437cb270d31e.jpg" />
  
 __c> method 03. Auto Regressive Process__
+ - It's not always stationary.
  - Bring the previous terms! 
  - We can generalize Random Walk to **AR(p)**: an autoregressive process of order p.
  - `p` refers to the number of previous terms you bring:
    ### ![formula](https://render.githubusercontent.com/render/math?math=\X_t=\epsilon_t) + history 
      <img src="https://user-images.githubusercontent.com/31917400/78362075-5ab9ab00-75b1-11ea-80df-be06f489b62a.jpg" /> so...AR(p) is the generalization of Random Walk. 
      
-     - The primary difference between an AR and MA model is based on the **correlation** between time series objects at different time points. The covariance between x(t) and x(t-n) is zero for MA models while the correlation of x(t) and x(t-n) gradually declines with n becoming larger in the AR model. This means that the MA model does not uses the past forecasts to predict the future values whereas it uses the errors from the past forecasts. While, the AR model uses the past forecasts to predict future values. 
-     - The noise quickly vanishes with time in MA model while the AR model won't necessarily be stationary. In fact, we'll try to come up with some basic conditions that tell us when an auto-regressive process is stationary. 
+   - The primary difference between an AR and MA model is based on the **correlation** between time series objects at different time points. The covariance between x(t) and x(t-n) is zero for MA models while the correlation of x(t) and x(t-n) gradually declines with n becoming larger in the AR model. This means that the MA model does not uses the past forecasts to predict the future values whereas it uses the errors from the past forecasts. While, the AR model uses the past forecasts to predict future values. 
+   - The noise quickly vanishes with time in MA model while the AR model won't necessarily be stationary. In fact, we'll try to come up with some basic conditions that tell us when an auto-regressive process is stationary. 
      
-     ```
+   ```
+   eps = rnorm(N, 0,1)
+   
+   X=NULL
+   X[1] = eps[1]
+   
+   phi_coeff=0.4
+   
+   for(i in 2:1000) {
+      X[i] = eps[i] + phi_coeff*X[i-1]
+   }
+   
+   AR_process = ts(X)
+   
+   par(mfrow = c(2,1))
+   plot(AR_process, main="AR(1)", ylab="standard density", col="blue")
+   acf(AR_process, main="Correlogram of AR(1)")
      
-     ```
-     
+   ```
+   <img src="https://user-images.githubusercontent.com/31917400/78380930-8a29e100-75cc-11ea-976a-6775173858fb.jpg" />
      
  
 
