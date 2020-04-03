@@ -56,7 +56,7 @@ __c> ACF (Auto-Corr-Function & Coefficient)__
 __d> PACF (Patial Auto-Corr-Function & Coefficient)__
  - The ACF is one of the primary tools for characterizing AR(p) or MA(q)...Can you tell what the order of the process should be?
    - MA(`q`) has an **ACF** that cuts off after `q` lags...(so if you find ACF cuts off after 4 lags, you can be reasonably sure you have an MA(4) process). 
-   - AR(`p`) has an **PACF** that cuts off after `p` lags...(so if you find PACF cuts off after 4 lags, you can be reasonably sure you have an AR(4) process).    
+   - AR(`p`) has an **PACF** that cuts off after `p` lags...(so if you find PACF cuts off after 4 lags, you can be reasonably sure you have an AR(4) process). FIND the most likely order using R-command `ar(ts.data, order.max=?)` ???   
 
 ### B. How to Model Time Series   
 __a> method 01. Random Walk__
