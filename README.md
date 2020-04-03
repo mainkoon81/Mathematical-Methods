@@ -113,6 +113,10 @@ __c> method 03. Auto Regressive Process__
    ### ![formula](https://render.githubusercontent.com/render/math?math=\X_t=\epsilon_t) + history 
      <img src="https://user-images.githubusercontent.com/31917400/78362075-5ab9ab00-75b1-11ea-80df-be06f489b62a.jpg" /> so...AR(p) is the generalization of Random Walk. 
      
+     - The primary difference between an AR and MA model is based on the **correlation** between time series objects at different time points. The covariance between x(t) and x(t-n) is zero for MA models while the correlation of x(t) and x(t-n) gradually declines with n becoming larger in the AR model. This means that the MA model does not uses the past forecasts to predict the future values whereas it uses the errors from the past forecasts. While, the AR model uses the past forecasts to predict future values. 
+     - The noise quickly vanishes with time in MA model while the AR model won't necessarily be stationary. In fact, we'll try to come up with some basic conditions that tell us when an auto-regressive process is stationary. 
+     
+     
      
  
 
