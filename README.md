@@ -155,7 +155,8 @@ __e> method 05. Integrated Model__ (ARIMA)
 
 __f> method 06. Integrated Model with Seasonality__ (SARIMA)
 
-> ### How to evaluate Time Series Model
+> ### How to measure the quality of the Time Series Model?
+ : AIC (Akaike Information Criterion) tries to help you assess the relative quality of several competing models, just like an adjusted ![formula](https://render.githubusercontent.com/render/math?math=\R^2) in linear regression, **by giving `credit` for models** which reduce the SSE and at the same time **by building in a `penalty` for models** which bring in too many parameters. <img src="https://user-images.githubusercontent.com/31917400/78587672-3110b600-7835-11ea-9ef2-5e699cea01c6.jpg" /> **`We prefer a model with a lower AIC`**. 
 
 
 
